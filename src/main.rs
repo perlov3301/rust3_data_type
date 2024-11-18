@@ -1,0 +1,38 @@
+fn main() {
+    println!("Hello, world from tut3_data_type");
+    println!("primitive types are basic and used to declare a variable" );
+    let mut xi = 972;
+    println!("972 is asigned as default i32(integer)  {}", xi);
+    xi =-972;
+    println!("new value -972 is asigned : {}", xi);
+    let xu: u32 = 972;
+    println!("972 declared as u32(unsigned 2^^32-1)  of value {:3}", xu);
+    println!("by default float point variable is f64");
+    let xf : f32 = 10412.2314;
+    println!("10412.2314 declared as f32; value is {:25}", xf);
+    let xf : f32 = 103412.2314;
+    println!("103412.2314 declared as f32; value is {:24}", xf);
+    let xf : f32 = 223412.2314;
+    println!("223412.2314 declared as f32 ; value is{:23}", xf);
+    let xf : f32 = 1063412.2314;
+    println!("10623412.2314 declared as f32 ; value is {:20}", xf);
+    let xb: bool = false;
+    println!("xb is {}", xb);
+    let xc:char = 'a';
+    println!("'a' is declared as char {} ", xc);
+    let xc= ';';
+    println!("';' is declared with value {} ", xc);
+    println!("scalar type is finite set of comparable(i.e. following scale) values");
+    let mut xtup:(i32, bool, char)= (1, true, 's');
+    xtup.1 = false;
+    println!("tuple is fixed (mutable with mut index) sequence of primitives with immutable type {:?} ", xtup);
+    println!("sequence of elements of tuple: {} {} {} ", xtup.0, xtup.1, xtup.2);
+    xtup= (10, false, 'a');
+    println!("entirely renewed tuple {:?} ", xtup);
+    let mut xarr= [1,2,3,4,5];
+    println!("array is sequence of similar elements of type of elements type {:?} ", xarr);
+    println!("access to element with index 0: {} ", xarr[0]);
+    xarr[4] = 3;
+    println!("edit element with index 4: {:?}", xarr);
+    println!("composite or compound type is constructed using primitive and composite types");
+}
